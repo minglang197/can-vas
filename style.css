@@ -1,0 +1,92 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow: hidden;
+}
+canvas {
+    border: 1px solid #999;
+    display: block;
+}
+.icon {
+    width: 2em;
+    height: 2em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    margin-left: 25%;
+    margin-top: 12.5%;
+    color: #666;
+  }
+  .div1 {
+    position: fixed;
+    left: 2px;
+    bottom: -2px;
+    width: 4vw;
+}
+button {
+    display: block;
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 2px;
+    outline: none;
+    border: none;
+}
+button:first-child  {
+    background-color: red;
+}
+button:nth-child(2) {
+    background-color: coral
+}
+button:nth-child(3) {
+    background-color: yellow
+}
+button:nth-child(4) {
+    background-color: green
+}
+button:nth-child(5) {
+    background-color: blue
+}
+button:nth-child(6) {
+    background-color: purple
+}
+button:nth-child(7) {
+    background-color: black
+}
+button:nth-child(8) {
+    background-color: grey
+}
+ul {
+    position: fixed;
+    right: 2px;
+    bottom: -10px;
+    width: 4vw;
+    list-style: none;
+}
+li  {
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 10px;
+    background-color: #999999;
+}
+li:hover {
+    transform: scale(1.2);
+    border:2px solid #999999
+}
+li:hover .icon{
+    color: black;
+}
+@media (max-width:500px){
+    .div1 {
+        width: 10vw;
+    }
+    ul {
+        width: 10vw;
+    }
+}
+
