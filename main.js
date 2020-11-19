@@ -9,6 +9,9 @@ ctx.strokeStyle = 'black';
 ctx.lineWidth = 5;
 ctx.lineCap = 'round';
 
+document.body.addEventListener('touchmove', function(e){
+    e.preventDefault();
+}, { passive: false });
 
 function demo(className, colors) {
     className = document.querySelector(`.${className}`);
